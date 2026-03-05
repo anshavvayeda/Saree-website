@@ -109,9 +109,11 @@ export const Navbar = ({ brandName = "Tamara's" }) => {
 
             {/* Logo - Center */}
             <Link to="/" data-testid="brand-logo-mobile">
-              <h1 className="font-['Playfair_Display'] text-xl tracking-wide text-[#1A1A1A]">
-                {brandName}
-              </h1>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/hnjvyi1w_Screenshot_2026-03-05_212806-removebg-preview.png"
+                alt="Tamara's"
+                className="h-12 w-auto object-contain"
+              />
             </Link>
 
             {/* Instagram Icon */}
@@ -155,7 +157,11 @@ export const Navbar = ({ brandName = "Tamara's" }) => {
               <div className="flex flex-col h-full">
                 {/* Header */}
                 <div className="flex items-center justify-between p-6 border-b border-[#E8E4DE]">
-                  <h2 className="font-['Playfair_Display'] text-xl text-[#1A1A1A]">{brandName}</h2>
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/hnjvyi1w_Screenshot_2026-03-05_212806-removebg-preview.png"
+                    alt="Tamara's"
+                    className="h-10 w-auto object-contain"
+                  />
                   <button
                     onClick={() => setIsMenuOpen(false)}
                     className="p-2 -mr-2 text-[#1A1A1A] hover:text-[#B8860B] transition-colors"
