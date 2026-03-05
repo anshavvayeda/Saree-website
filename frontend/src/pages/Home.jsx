@@ -78,7 +78,7 @@ export const Home = () => {
               key={currentImageIndex}
               src={HERO_IMAGES[currentImageIndex]}
               alt="Tamara's Silk Handloom Collection"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-top"
               variants={slideVariants}
               initial="enter"
               animate="center"
