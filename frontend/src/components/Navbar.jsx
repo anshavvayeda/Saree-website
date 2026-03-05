@@ -47,7 +47,7 @@ export const Navbar = ({ brandName = "Tamara's" }) => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-xs uppercase tracking-[0.15em] transition-colors border-gold-animated pb-1 ${
+                  className={`text-sm uppercase tracking-[0.15em] transition-colors border-gold-animated pb-1 ${
                     location.pathname === item.path ? 'text-[#B8860B]' : 'text-[#1A1A1A] hover:text-[#B8860B]'
                   }`}
                   data-testid={`nav-link-${item.label.toLowerCase()}`}
@@ -60,9 +60,11 @@ export const Navbar = ({ brandName = "Tamara's" }) => {
             {/* Center Logo */}
             <div className="flex justify-center">
               <Link to="/" data-testid="brand-logo">
-                <h1 className="font-['Playfair_Display'] text-2xl tracking-wide text-[#1A1A1A]">
-                  {brandName}
-                </h1>
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/hnjvyi1w_Screenshot_2026-03-05_212806-removebg-preview.png"
+                  alt="Tamara's"
+                  className="h-16 w-auto object-contain"
+                />
               </Link>
             </div>
 
@@ -72,7 +74,7 @@ export const Navbar = ({ brandName = "Tamara's" }) => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-xs uppercase tracking-[0.15em] transition-colors border-gold-animated pb-1 whitespace-nowrap ${
+                  className={`text-sm uppercase tracking-[0.15em] transition-colors border-gold-animated pb-1 whitespace-nowrap ${
                     location.pathname === item.path ? 'text-[#B8860B]' : 'text-[#1A1A1A] hover:text-[#B8860B]'
                   }`}
                   data-testid={`nav-link-${item.label.toLowerCase()}`}
