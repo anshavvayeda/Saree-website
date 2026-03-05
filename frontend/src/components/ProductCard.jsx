@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Eye } from 'lucide-react';
+import { Eye, MessageCircle } from 'lucide-react';
 import { getProxiedImageUrl } from '@/utils/imageProxy';
 
 export const ProductCard = ({ product, index = 0 }) => {
@@ -16,6 +16,26 @@ export const ProductCard = ({ product, index = 0 }) => {
   
   // Get fabric display
   const fabricDisplay = product.fabric || 'Silk';
+
+  // Generate item code from title
+  const generateItemCode = (title) => {
+    if (!title) return 'TMS-001';
+    const words = title.split(' ').slice(0, 2).map(w => w.charAt(0).toUpperCase()).join('');
+    const num = title.length % 900 + 100;
+    return `TMS-${words}${num}`;
+  };
+
+  const itemCode = generateItemCode(product.title);
+
+  // WhatsApp message handler
+  const handleWhatsAppClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const message = `Hi! I'm interested in purchasing this saree:\n\n*${product.title}*\nItem Code: ${itemCode}\n\nPlease share more details about availability and pricing.`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/919876543210?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   return (
     <motion.div
@@ -69,13 +89,6 @@ export const ProductCard = ({ product, index = 0 }) => {
               <span>View</span>
             </span>
           </motion.div>
-
-          {/* Work Type Badge */}
-          {product.work_type && (
-            <div className="absolute top-3 left-3 px-3 py-1 bg-white/90 backdrop-blur-sm text-[10px] text-[#B8860B] uppercase tracking-wider">
-              {product.work_type}
-            </div>
-          )}
         </div>
 
         {/* Product Info */}
@@ -88,6 +101,16 @@ export const ProductCard = ({ product, index = 0 }) => {
           </p>
         </div>
       </Link>
+
+      {/* Buy on WhatsApp Button */}
+      <button
+        onClick={handleWhatsAppClick}
+        className="mt-3 w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-[#25D366] hover:bg-[#128C7E] text-white text-xs uppercase tracking-wider font-medium transition-colors duration-300 rounded-sm"
+        data-testid={`whatsapp-btn-${product.title?.toLowerCase().replace(/\s+/g, '-') || index}`}
+      >
+        <MessageCircle className="w-4 h-4" />
+        <span>Buy on WhatsApp</span>
+      </button>
     </motion.div>
   );
 };
