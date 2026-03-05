@@ -61,9 +61,9 @@ export const Navbar = ({ brandName = "Tamara's" }) => {
             <div className="flex justify-center">
               <Link to="/" data-testid="brand-logo">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/hnjvyi1w_Screenshot_2026-03-05_212806-removebg-preview.png"
+                  src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/1cp9flew_Screenshot_2026-03-05_214221-removebg-preview.png"
                   alt="Tamara's"
-                  className="h-16 w-auto object-contain"
+                  className="h-20 w-auto object-contain"
                 />
               </Link>
             </div>
@@ -110,9 +110,9 @@ export const Navbar = ({ brandName = "Tamara's" }) => {
             {/* Logo - Center */}
             <Link to="/" data-testid="brand-logo-mobile">
               <img 
-                src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/hnjvyi1w_Screenshot_2026-03-05_212806-removebg-preview.png"
+                src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/1cp9flew_Screenshot_2026-03-05_214221-removebg-preview.png"
                 alt="Tamara's"
-                className="h-12 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </Link>
 
@@ -158,9 +158,9 @@ export const Navbar = ({ brandName = "Tamara's" }) => {
                 {/* Header */}
                 <div className="flex items-center justify-between p-6 border-b border-[#E8E4DE]">
                   <img 
-                    src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/hnjvyi1w_Screenshot_2026-03-05_212806-removebg-preview.png"
+                    src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/1cp9flew_Screenshot_2026-03-05_214221-removebg-preview.png"
                     alt="Tamara's"
-                    className="h-10 w-auto object-contain"
+                    className="h-12 w-auto object-contain"
                   />
                   <button
                     onClick={() => setIsMenuOpen(false)}
