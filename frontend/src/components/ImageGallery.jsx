@@ -88,8 +88,8 @@ export const ImageGallery = ({ media = [], productTitle = 'Product' }) => {
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="flex overflow-x-auto snap-x-mandatory hide-scrollbar touch-pan-x"
-          style={{ scrollSnapType: 'x mandatory' }}
+          className="flex overflow-x-auto snap-x-mandatory hide-scrollbar"
+          style={{ scrollSnapType: 'x mandatory', touchAction: 'pan-x pan-y' }}
         >
           {proxiedMedia.map((item, index) => (
             <div
