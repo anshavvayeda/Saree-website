@@ -275,7 +275,7 @@ export const Home = () => {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full border border-[#B8860B]/30" />
                 <img
-                  src="https://images.unsplash.com/photo-1524314010015-136ee8ae1ab3?w=600&q=80"
+                  src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/5lzr2bpe_image%20%284%29.png"
                   alt="Craftsman at work"
                   className="w-full aspect-[4/5] object-cover"
                 />

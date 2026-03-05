@@ -66,21 +66,23 @@ export const About = () => {
               </h2>
               
               <p className="text-[#666666] leading-relaxed mb-6">
-                {brand.bio || "Crafting a new aesthetic for the traditional. Hand-picked saree collections curated with love."}
+                At Tamara's Silk Handloom, tradition meets modern elegance. Our vision is to craft a fresh aesthetic for timeless Indian textiles while honoring the heritage behind every weave.
               </p>
               
               <p className="text-[#666666] leading-relaxed mb-6">
-                At Tamara's Silk Handloom, we believe that every saree tells a story. 
-                Our journey began with a passion for preserving the rich heritage of 
-                Indian handloom while making it accessible to the modern woman.
+                Founded by Milan Lohkna, the brand was born from a deep appreciation for India's rich handloom traditions and a desire to make these treasures accessible to today's woman. Every saree we offer is thoughtfully hand-picked, reflecting authenticity, craftsmanship, and enduring beauty.
               </p>
               
+              <p className="text-[#666666] leading-relaxed mb-6">
+                We work closely with master artisans from across India, bringing together a diverse collection of handcrafted sarees. From the intricate beauty of Banarasi weaves to the delicate artistry of Lucknow's Chikankari, from Gujarat's bold Ajrakh prints to the elegance of Parsi Gara embroidery—each piece represents generations of skill, culture, and storytelling.
+              </p>
+
+              <p className="text-[#666666] leading-relaxed mb-6">
+                At Tamara's Silk Handloom, we believe a saree is more than just attire—it is a piece of heritage, woven with history and made to be cherished.
+              </p>
+
               <p className="text-[#666666] leading-relaxed mb-8">
-                Each piece in our collection is carefully curated from master weavers 
-                across India - from the intricate Banarasi weaves to the delicate 
-                Chikankari embroidery of Lucknow, from the bold Ajrakh prints of Gujarat 
-                to the elegant Parsi Gara embroidery. We work directly with artisans to 
-                bring you authentic, handcrafted pieces that celebrate centuries of textile tradition.
+                With curated collections and worldwide shipping, we bring India's finest handlooms to women everywhere.
               </p>
 
               <a
