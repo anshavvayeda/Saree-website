@@ -52,9 +52,9 @@ export const About = () => {
               <div className="relative">
                 <div className="absolute -top-2 -left-2 w-full h-full border border-[#B8860B]/30" />
                 <img
-                  src={getProxiedImageUrl(brand.profile_image) || "https://images.unsplash.com/photo-1688382654723-a7366006519b?w=400&q=80"}
+                  src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/bg3th51z_Screenshot_2026-03-05_214221-removebg-preview.png"
                   alt={brand.name}
-                  className="w-40 h-40 md:w-48 md:h-48 object-cover"
+                  className="w-40 h-40 md:w-48 md:h-48 object-contain bg-[#8B0000]"
                 />
               </div>
             </div>
