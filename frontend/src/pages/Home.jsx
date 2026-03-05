@@ -71,7 +71,6 @@ export const Home = () => {
         >
           {/* Overlay for text readability on light images */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#1A1A1A]/70 via-[#1A1A1A]/40 to-transparent z-10" />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FDFBF7] z-10" />
           
           {/* Image Carousel */}
           <AnimatePresence mode="wait">
