@@ -191,17 +191,11 @@ export const About = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="grid grid-cols-2 gap-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1524314010015-136ee8ae1ab3?w=400&q=80"
-                alt="Weaving process"
-                className="w-full aspect-[3/4] object-cover"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&q=80"
-                alt="Silk saree"
-                className="w-full aspect-[3/4] object-cover mt-8"
+                src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/958gkzya_image%20%284%29.png"
+                alt="Artisan weaving process"
+                className="w-full aspect-[4/5] object-cover"
               />
             </motion.div>
           </div>
