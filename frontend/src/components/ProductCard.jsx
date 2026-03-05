@@ -4,9 +4,6 @@ import { motion } from 'framer-motion';
 import { Eye, MessageCircle } from 'lucide-react';
 import { getProxiedImageUrl } from '@/utils/imageProxy';
 
-// WhatsApp Business Number
-const WHATSAPP_NUMBER = '917041297390';
-
 export const ProductCard = ({ product, index = 0 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
@@ -30,13 +27,13 @@ export const ProductCard = ({ product, index = 0 }) => {
 
   const itemCode = generateItemCode(product.title);
 
-  // WhatsApp message handler
+  // WhatsApp message handler - Correct number: +91 7041297390
   const handleWhatsAppClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
     const message = `Hi! I'm interested in purchasing this saree:\n\n*${product.title}*\nItem Code: ${itemCode}\n\nPlease share more details about availability and pricing.`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/917041297390?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
 
