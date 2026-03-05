@@ -54,7 +54,7 @@ export const About = () => {
                 <img
                   src="https://customer-assets.emergentagent.com/job_initial-setup-16/artifacts/bg3th51z_Screenshot_2026-03-05_214221-removebg-preview.png"
                   alt={brand.name}
-                  className="w-40 h-40 md:w-48 md:h-48 object-contain bg-[#8B0000]"
+                  className="w-40 h-40 md:w-48 md:h-48 object-contain"
                 />
               </div>
             </div>
