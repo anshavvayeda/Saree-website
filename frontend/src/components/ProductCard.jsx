@@ -33,7 +33,7 @@ export const ProductCard = ({ product, index = 0 }) => {
     e.stopPropagation();
     const message = `Hi! I'm interested in purchasing this saree:\n\n*${product.title}*\nItem Code: ${itemCode}\n\nPlease share more details about availability and pricing.`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/917041297390?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
 
